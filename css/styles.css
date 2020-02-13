@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* HEADER STYLING*/
+/* HEADER STYLING******************************************************************************************/
 
 header {
   grid-area: header;
@@ -15,21 +15,17 @@ header {
   align-items: center;
 }
 
-sup {
-  font-size: .5rem;
-}
-
-.header-icon {
+.headerIcon {
   width: 50px;
   height: 50px;
   margin: 5px 0;
 }
 
-.header-icon:hover {
+.headerIcon:hover {
   transform: scale(1.4) rotate(30deg);
 }
 
-.dot {
+.notificationDot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -44,7 +40,7 @@ sup {
   justify-content: center;
 }
 
-.user-avatar {
+.userAvatar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,14 +48,14 @@ sup {
   margin-left: 25px;
 }
 
-.user-name {
+.userName {
   margin: 0;
   font-size: 1.5em;
 }
-/* IMAGE STYLING*/
+/* IMAGE STYLING*******************************************************************************************/
 
 .profile,
-.profile-pic {
+.profilePic {
   border: 3px solid darkgray;
 }
 
@@ -69,12 +65,12 @@ sup {
   border-radius: 50%;
 }
 
-.nav-icon {
+.navIcon {
   width: 30px;
   margin: 0;
 }
 
-/*ELEMENT STYLING*/
+/*ELEMENT STYLING***************************************************************************************/
 
 h1 {
   font-size: 2em;
@@ -126,7 +122,7 @@ p {
   line-height: 1.3em;
 }
 
-/* INPUT STYLING */
+/*INPUT STYLING********************************************************************************************/
 
 input {
   padding: 1.2em;
@@ -143,8 +139,8 @@ textarea:focus {
 }
 
 
-/* GRID STYLING*/
-.container {
+/*GRID STYLING********************************************************************************************/
+.appContainer {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0;
@@ -157,11 +153,11 @@ textarea:focus {
     "main";
 }
 
-/* MAIN CONTENT STYLING*/
+/*MAIN CONTENT STYLING********************************************************************************************/
 
 main {
   grid-area: main;
-  background-color: #eeb1b1;
+  background-color: gray;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
@@ -184,12 +180,12 @@ main {
   border-bottom: 3px solid whitesmoke;
 }
 
-.db-container {
+.dashboardContainer {
   margin: 0;
   padding: 0;
 }
 
-.dashboard-search-bg {
+.searchBar{
   display: flex;
   align-items: center;
   background-color: darkgray;
@@ -208,7 +204,7 @@ main {
   color: silver;
   opacity: 1;
 }
-.alert-container {
+.alertContainer {
   margin: 5px;
   padding: 5px;
 }
@@ -237,7 +233,7 @@ main {
   background-color: #fff;
   border: 2px solid darkslategrey;
 }
-/* NAV STYLING*/
+/*NAV STYLING********************************************************************************************/
 nav {
   grid-area: nav;
   display: flex;
@@ -246,7 +242,7 @@ nav {
   
 }
 
-/* TRAFFIC GRAPH*/
+/*TRAFFIC GRAPH********************************************************************************************/
 
 .traffic {
   grid-area: traffic;
@@ -270,22 +266,22 @@ nav {
   color: black;
 }
 
-/* BAR GRAPH*/
+/*BAR GRAPH********************************************************************************************/
 .daily-traffic {
   grid-area: daily-traffic;
 }
 
-/* PIE GRAPH*/
+/*PIE GRAPH********************************************************************************************/
 .mobile-users {
   grid-area: mobile-users;
 }
 
-/* SOCIAL STATS*/
+/*SOCIAL STATS********************************************************************************************/
 .social-stats {
   grid-area: social-stats;
 }
 
-.social-card {
+.socialCard {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -296,7 +292,9 @@ nav {
   border-radius: 45px;
 }
 
-.social-icon {
+.twitterIcon,
+.facebookIcon,
+.googleIcon {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -307,7 +305,7 @@ nav {
   margin-left: 20px;
 }
 
-.social-results {
+.socialResults {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,47 +317,47 @@ nav {
   height: 35px;
 }
 
-.social-results h3 {
+.socialResults h3 {
   margin-top: 0;
   margin-left: 1em;
   font-size: 1.2em;
   color: #7477bf;
 }
 
-.social-results p {
+.socialResults p {
   margin-left: 1em;
   font-size: 2.5em;
   color: black;
 }
 
-/* NEW MEMBERS*/
+/*NEW MEMBERS********************************************************************************************/
 
-.new-members {
+.newMembers {
   grid-area: new-members;
   display: flex;
   flex-direction: column;
 }
 
-.member-card {
+.memberCard {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.profile-pic {
+.profilePic {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
 
-.member-info {
+.memberInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.name-address {
+.name {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -367,21 +365,21 @@ nav {
   padding: 2px;
 }
 
-.member-info h4 {
-  font-size: 1.3em;
+.memberInfo h4 {
+  font-size: 1em;
   text-transform: capitalize;
   margin: 0;
   color: black;
 }
 
-.member-info p {
+.memberInfo p {
   text-align: left;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
 }
 
-.member-date {
+.joinDate {
   padding: 0;
 }
 
@@ -391,60 +389,60 @@ nav {
   
 }
 
-/* RECENT ACTIVITY*/
+/*RECENT ACTIVITY********************************************************************************************/
 
-.recent-activity {
+.recentActivity {
   grid-area: recent-activity;
   display: flex;
   flex-direction: column;
 }
 
-.activity-card {
+.activityCard {
   display: flex;
   justify-content: space-between;
   padding: 5px;
 }
 
-.activity-info {
+.activityInfo {
   display: flex;
   justify-content: space-between;
   
 }
 
-.comment-time {
+.postTime {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.activity-info p {
-  text-align: left;
-  margin: 5px;
+.activityInfo p {
   font-size: 1em;
   color: #636363;
-}
-
-.activity-info p.time {
   text-align: left;
   margin: 5px;
-  font-size: 1em;
-  color: #7477bf;
 }
 
-.recent-activity hr {
+.activityInfo p.time {
+  font-size: 1em;
+  color: #7477bf;
+  text-align: left;
+  margin: 5px;
+}
+
+.recentActivity hr {
   width: 95%;
   border-top: 2px solid darkblue;
  
 }
 
-.right-angle {
-  color: #eda11d;
+.rightAngle {
   font-size: 2em;
-  margin: 0 1rem;
+  margin: 0 1em;
+  color: #eda11d;
 }
 
-/* MESSAGE USER*/
+/*MESSAGE USER********************************************************************************************/
 
 .message-user {
   grid-area: message-user;
@@ -485,7 +483,7 @@ nav {
   border-radius: 35px;
 }
 
-/* SETTINGS AREA-*/
+/* SETTINGS AREA*****************************************************************************************/
 
 .settings {
   grid-area: settings;
@@ -551,7 +549,7 @@ option {
   margin-left: 15px;
 }
 
-/* SLIDE BUTTONS*/
+/*SLIDE BUTTONS********************************************************************************************/
 
 .switch {
   position: relative;
@@ -631,10 +629,10 @@ input:checked + .slider:after {
 
 
 
-/* MEDIA QUERIES */
+/*MEDIA QUERIES********************************************************************************************/
 
 @media (min-width: 768px) {
-  .container {
+  .appContainer {
     grid-template-columns: auto minmax(345px, 945px) minmax(345px, 945px);
     grid-template-areas:
       "header header header"
@@ -654,15 +652,15 @@ input:checked + .slider:after {
     align-items: center;
 
   }
-  .header-icon {
+  .headerIcon {
     width: 40px;
     height: 40px;
   }
-  .header-icon:hover {
+  .headerIcon:hover {
     width: 45px;
     height: 45px;
   }
-  .dot {
+  .notificationDot{
     margin: 0 0 40px 0;
   }
   .user {
@@ -693,14 +691,14 @@ input:checked + .slider:after {
     display: flex;
     flex-wrap: wrap;
   }
-  .db-container {
+  .dashboardContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
   
-  .dashboard-search-bg {
+  .searchBar {
     justify-content: flex-end;
     align-items: center;
     border: 2px solid darkgray;
@@ -711,7 +709,7 @@ input:checked + .slider:after {
   .dashboard-search {
     width: 80%;
   }
-  .alert-container {
+  .alertContainer {
     width: 100%;
   }
   .widget {
@@ -725,16 +723,18 @@ input:checked + .slider:after {
     flex-wrap: wrap;
    
   }
-  .card-container {
+  .cardContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .social-card {
+  .socialCard {
     margin: 0 10px 10px 10px;
     padding: .5em 10px;
   }
-  .social-icon {
+  .twitterIcon,
+  .facebookIcon,
+  .googleIcon {
     width: 55px;
     height: 55px;
   }
@@ -742,25 +742,25 @@ input:checked + .slider:after {
     width: 30px;
     height: 30px;
   }
-  .social-results h3 {
+  .socialResults h3 {
     font-size: .75em;
     margin: 0 0 .25em .7em;
   }
-  .social-results p {
+  .socialResults p {
     font-size: 1.5em;
     margin-left: .75em;
   }
   p,
   img,
-  .activity-info p,
-  .activity-info p.time,
-  .right-angle {
+  .activityInfo p,
+  .activityInfo p.time,
+  .rightAngle {
     margin: 0 .5em;
   }
-  .member-info h4 {
+  .memberInfo h4 {
     margin: 0 0 .25em 1em;
   }
-  .member-info p {
+  .memberInfo p {
     margin: 0 0 0 1em;
   }
  
@@ -783,13 +783,15 @@ input:checked + .slider:after {
     margin-bottom: 0;
   }
 }
-/* MEDIA QUERIES */
+/*MEDIA QUERIES********************************************************************************************/
 @media (min-width: 1024px) {
-  .social-card {
+  .socialCard {
     margin: 0 22px 22px 22px;
     padding: 1em 8px;
   }
-  .social-icon {
+  .twitterIcon,
+  .facebookIcon,
+  .googleIcon {
     width: 50px;
     height: 50px;
   }
@@ -797,36 +799,36 @@ input:checked + .slider:after {
     width: 35px;
     height: 35px;
   }
-  .social-results h3 {
+  .socialResults h3 {
     margin: 0 1em 1em 1em;
     font-size: 1em;
   }
-  .social-results p {
+  .socialResults p {
     margin-left: 1em;
     font-size: 2.5em;
   }
-  .member-card {
+  .memberCard {
     padding: 0;
     flex-grow: 1;
   }
-  .member-info {
+  .memberInfo {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .member-info h4{
+  .memberinfo h4{
     margin: 0 0 0 1em;
   }
-  .activity-card {
+  .activityCard {
     flex-grow: 1;
   }
-  .activity-info {
+  .activityInfo {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
   }
-  .comment-time {
+  .postTime {
     display: flex;
     flex-direction: column;
   }
