@@ -16,7 +16,7 @@
 
       <!--Header-->
       <header>
-        <h1><strong>Your</strong>App<sup>TM</sup></h1>
+        <h1>Your App &trade;</h1>
         <div class="user">
           <img class="header-icon" src="icons/icon-bell.svg" alt="bell icon">
           <div class="dot"></div>
@@ -28,15 +28,17 @@
       </header>
 
       <!-- Navigation-->
+      <aside>
       <nav>
         <div class="active"><img class="nav-icon" src="icons/icon-dashboard.svg" alt="dashboard icon"></div>
         <div><img class="nav-icon" src="icons/icon-members.svg" alt="members icon"></div>
         <div><img class="nav-icon" src="icons/icon-visits.svg" alt="visits icon"></div>
         <div><img class="nav-icon" src="icons/icon-settings.svg" alt="settings icon"></div>
       </nav>
+    </aside>
 
       <main>
-        <!-- Dashboard-->
+        <!-- Dashboard and search bar-->
         <div class="dashboard">
           <div class="db-container">
             <h2>Dashboard</h2>
@@ -46,7 +48,7 @@
           </div>
           <div class="alert-container">
             <div class="alert">
-              <p><strong>Alert</strong> - You have 2 unread alerts!</p>
+              <p><strong>Alert</strong> - You have 4 unread alerts!</p>
               <button class="btn-alert-x">&times;</button>
             </div>
           </div>
@@ -72,13 +74,13 @@
           <canvas id="traffic"></canvas>
         </div>
 
-        <!-- Daily Traffic-->
+        <!-- Daily Traffic Bar Graph-->
         <div class="daily-traffic widget">
           <h3>Daily Traffic</h3>
           <canvas id="daily-traffic"></canvas>
         </div>
 
-        <!-- Mobile Users-->
+        <!-- Mobile Users Pie Chart-->
         <div class="mobile-users widget">
           <h3>Mobile Users</h3>
           <canvas id="mobile-users"></canvas>
@@ -128,6 +130,7 @@
         <div class="new-members widget">
           <h3>New Members</h3>
           <div class="member-card">
+
             <!-- Member 1 -->
             <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
             <div class="member-info">
@@ -141,6 +144,7 @@
             </div>
           </div>
           <hr>
+
           <!-- Member 2 -->
           <div class="member-card">
             <img class="profile-pic" src="images/member-2.jpg" alt="member1 profile pic">
@@ -155,6 +159,7 @@
             </div>
           </div>
           <hr>
+
           <!-- Member 3 -->
           <div class="member-card">
             <img class="profile-pic" src="images/member-3.jpg" alt="member1 profile pic">
@@ -169,6 +174,7 @@
             </div>
           </div>
           <hr>
+
           <!-- Member 4 -->
           <div class="member-card">
             <img class="profile-pic" src="images/member-4.jpg" alt="member1 profile pic">
@@ -187,6 +193,7 @@
         <!-- Recent Activity -->
         <div class="recent-activity widget">
           <h3>Recent Activity</h3>
+
           <!-- Post 1 -->
           <div class="activity-card">
             <div class="activity-info">
@@ -199,6 +206,7 @@
             <div class="right-angle">&rang;</div>
           </div>
           <hr>
+
           <!-- Post 2 -->
           <div class="activity-card">
             <div class="activity-info">
@@ -211,6 +219,7 @@
             <div class="right-angle">&rang;</div>
           </div>
           <hr>
+
           <!-- Post 3 -->
           <div class="activity-card">
             <div class="activity-info">
@@ -223,6 +232,7 @@
             <div class="right-angle">&rang;</div>
           </div>
           <hr>
+
           <!-- Post 4 -->
           <div class="activity-card">
             <div class="activity-info">
@@ -239,13 +249,11 @@
         <!-- Message User Section -->
         <div class="message-user widget">
           <h3>Message User</h3>
-          <!-- <div class="user-fields"> -->
             <form class="user-fields">
               <input class="user-search" name="user-search" type="search" placeholder="Search for User">
               <textarea class="user-message" name="user_message" placeholder="Message for User"></textarea>
               <button class="message-user-send" name="message-user-send" type="submit" value="submit">Send</button>
             </form>
-          <!-- </div> -->
         </div>
 
         <!-- Settings Section -->
