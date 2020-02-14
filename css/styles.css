@@ -8,7 +8,7 @@ header {
   grid-area: header;
   background-color: #1d7eed;
   color: black;
-  padding: 0 0 1rem;
+  padding: 0 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -143,7 +143,7 @@ input:focus {
 }
 
 textarea:focus {
-  box-shadow: 2ps 2px 2px 2px lightgreen;
+  box-shadow: 2px 2px 2px 2px lightgreen;
 }
 
 
