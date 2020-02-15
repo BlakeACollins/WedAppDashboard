@@ -1,10 +1,10 @@
 
-// Traffic line chart
+// Line chart
 var traffic = document.getElementById('traffic').getContext('2d');
 var lineChart = new Chart(traffic, {
   type: 'line',
   data: {
-    responsive: false,
+    responsive: true,
     maintainAspectRatio: false,
     xLabels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
     yLabels: ["500", "1000", "1500", "2000", "2500"],
@@ -15,7 +15,7 @@ var lineChart = new Chart(traffic, {
         lineTension: 0,
         pointRadius: 5,
         pointBackgroundColor: 'gold',
-        data: [180, 250, 750, 810, 300, 450, 680, 960, 1050, 1480, 1305, 1756, 2250],
+        data: [311, 241, 358, 812, 404, 778, 682, 426, 2057, 1478, 1317, 1856, 2042],
     }],
   },
   options: {
@@ -37,17 +37,17 @@ var lineChart = new Chart(traffic, {
   }
 });
 
-//traffic bar chart
+//Bar chart
 var dailyTraffic = document.getElementById('daily-traffic').getContext('2d');
 var barChart = new Chart(dailyTraffic, {
   type: 'bar',
   data: {
-    responsive: false,
+    responsive: true,
     maintainAspectRatio: false,
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
       label: '',
-      data: [75, 130, 192, 108, 190, 250, 200],
+      data: [77, 142, 196, 118, 194, 256, 208],
       backgroundColor: '#eda11d',
     }]
   },
@@ -70,12 +70,13 @@ var barChart = new Chart(dailyTraffic, {
   }
 });
 
-//Mobile user pie chart
+//Pie chart
 var mobileUsers = document.getElementById('mobile-users').getContext('2d');
+
 var doughnutChart = new Chart(mobileUsers, {
   type: 'doughnut',
   data: {
-    responsive: false,
+    responsive: true,
     maintainAspectRatio: false,
     labels: ["Phones", "Tablets", "Desktop"],
     datasets: [{
@@ -87,6 +88,6 @@ var doughnutChart = new Chart(mobileUsers, {
     legend: {
       position: 'right',
     },
-    rotation: -0.6 * Math.PI,
+    rotation: -0.9 * Math.PI,
   }
 });
