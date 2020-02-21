@@ -105,7 +105,7 @@ h3 {
 
 h2,
 h3 {
-  font-weight: 400;
+  
   color: black;
 }
 
@@ -122,7 +122,7 @@ img {
 }
 
 div {
-  padding: 8px 0;
+  padding: 5px;
 }
 
 p {
@@ -235,10 +235,9 @@ main {
 }
 
 .alertX {
-  border: none;
   background-color: inherit;
   color: inherit;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .widget {
@@ -297,6 +296,8 @@ main {
   background-color: whitesmoke;
   border: 2px solid black;
   border-radius: 45px;
+  max-width: 40vw;
+
 }
 
 .twitterIcon,
@@ -368,27 +369,30 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 2px;
+  padding: 1px;
 }
 
 .memberInfo h4 {
-  margin: 0;
-  padding: 2px;
+  margin: 2px;
+  padding: 1px;
+  text-align: left;
   font-size: 1em;
-  text-transform: capitalize;
-  color: black;
+  color: #636363;
 }
 
 .memberInfo p {
   margin: 0;
-  padding: 2px;
+  padding: 1px;
   text-align: left;
-  font-size: 1em;
-  color: black;
+  font-size: 1.2em;
+  color: darkcyan;
 }
 
 .joinDate {
-  padding: 2px;
+  margin: 2px;
+  padding: 1px;
+  font-size: 1em;
+  color: #636363;
 }
 
 .new-members hr {
@@ -425,8 +429,8 @@ main {
 }
 
 .activityInfo p {
-  margin: 5px;
-  padding: 2px;
+  margin: 2px;
+  padding: 1px;
   text-align: left;
   font-size: 1em;
   color: #636363;
@@ -447,8 +451,7 @@ main {
 }
 
 .rightAngle {
-  font-size: 3em;
-  margin: 0 1em;
+  font-size: 2.5em;
   color: #eda11d;
 }
 
@@ -749,11 +752,11 @@ input:checked + .slider:after {
   .twitterIcon,
   .facebookIcon,
   .googleIcon {
-    width: 55px;
-    height: 55px;
+    width: 25px;
+    height: 25px;
   }
   .soc-icon {
-    width: 30px;
+    width: 10px;
     height: 30px;
   }
   .socialResults h3 {
