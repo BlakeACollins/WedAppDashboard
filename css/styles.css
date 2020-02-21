@@ -286,13 +286,16 @@ main {
 .social-stats {
   grid-area: social-stats;
 }
-
+.cardContainer{
+  align-items: center;
+}
 .socialCard {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 5px;
-  padding: .5em;
+  margin: 4px;
+  margin-left: 15%;
+  padding: 1em;
   background-color: whitesmoke;
   border: 2px solid black;
   border-radius: 45px;
@@ -380,7 +383,7 @@ main {
 }
 
 .memberInfo p {
-  margin: 0;
+  margin: 2px;
   padding: 1px;
   text-align: left;
   font-size: 1.2em;
@@ -397,7 +400,7 @@ main {
 .new-members hr {
   width: 95%;
   border-top: 2px solid darkblue;
-  
+  margin-top: 48px;
 }
 
 /*RECENT ACTIVITY********************************************************************************************/
@@ -751,11 +754,11 @@ input:checked + .slider:after {
   .twitterIcon,
   .facebookIcon,
   .googleIcon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
   }
   .soc-icon {
-    width: 10px;
+    width: 30px;
     height: 30px;
   }
   .socialResults h3 {
@@ -766,18 +769,12 @@ input:checked + .slider:after {
     font-size: 1.5em;
     margin-left: .75em;
   }
-  p,
-  img,
-  .activityInfo p,
-  .activityInfo p.time,
-  .rightAngle {
-    margin: 0 .5em;
-  }
+ 
   .memberInfo h4 {
-    margin: 0 0 .25em 1em;
+    margin: 0 0 .25em .7em;
   }
   .memberInfo p {
-    margin: 0 0 0 1em;
+    margin: 0 0 .25em .7em;
   }
  
   .user-fields {
@@ -846,7 +843,8 @@ input:checked + .slider:after {
   .activityInfo {
     width: 100%;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   .postTime {
     display: flex;
