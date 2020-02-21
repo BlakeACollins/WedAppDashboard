@@ -1,3 +1,20 @@
+window.onload= function (){
+const notificationDot = document.querySelector('.notificationDot');
+const alertContainer = document.querySelector('.alertContainer');
+const alert = document.querySelector('.alertX');
+const userFields = document.getElementById(".user-fields");
+const message = document.getElementById(".message-fields");
+const userSearch = document.querySelector('.user-search');
+const userMessage = document.querySelector('.user-message');
+const send = document.getElementById(".send");
+
+
+  
+//Alert box
+alert.addEventListener('click', () => {
+  alertContainer.innerHTML = "";
+  notificationDot.style.display = "none";
+});
 
 // Line chart
 var traffic = document.getElementById('traffic').getContext('2d');
@@ -91,3 +108,21 @@ var doughnutChart = new Chart(mobileUsers, {
     rotation: -0.9 * Math.PI,
   }
 });
+
+// Send Message Section
+userFields.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let user = userSearch.value;
+  let message = userMessage.value;
+  if (user == '' && message == '') {
+    window.alert('You haven\'t entered a user or message.');
+  } else if (user == '') {
+    window.alert('You haven\'t entered a user.');
+  } else if (message == '') {
+    window.alert('You haven\'t entered a message.');
+  } else {
+    window.alert('Your message has been delivered.');
+  }
+}
+
+)};
