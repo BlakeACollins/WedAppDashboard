@@ -652,7 +652,7 @@ input:checked + .slider:after {
   }
   
   .appContainer {
-    grid-template-columns: auto minmax(344px, 944px) minmax(345px, 945px);
+    grid-template-columns: auto minmax(345px, 945px) minmax(345px, 945px);
     grid-template-areas:
       "header header header"
       "nav main main";
