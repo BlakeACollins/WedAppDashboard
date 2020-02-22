@@ -799,7 +799,7 @@ input:checked + .slider:after {
 /*MEDIA QUERIES********************************************************************************************/
 @media (min-width: 1024px) {
   h1{
-    margin-top: -20px;
+    margin-top: 10px;
     padding-left: 10px;
   }
   .socialCard {
