@@ -2,9 +2,10 @@
 const notificationDot = document.querySelector('.notificationDot');
 const alertContainer = document.querySelector('.alertContainer');
 const alert = document.querySelector('.alertX');
-const userFields = document.getElementById(".sendMessage");
-const userSearch = document.getElementById('.search-user');
-const userMessage = document.querySelector('.user-message');
+
+const userFields = document.querySelector(".user-fields");
+const user = document.querySelector('.user-search');
+const message = document.querySelector('.user-message');
 const send = document.querySelector(".message-user-send");
 
 
