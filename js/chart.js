@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 const notificationDot = document.querySelector('.notificationDot');
 const alertContainer = document.querySelector('.alertContainer');
 const alert = document.querySelector('.alertX');
