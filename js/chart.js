@@ -110,15 +110,16 @@ var doughnutChart = new Chart(mobileUsers, {
 });
 
 // Send Message Section
-send.addEventListener('click', () => {
+send.addEventListener('click', (event) => {
+  event.preventDefault();
   if (user.value === "" && message.value === "") {
-      alert("Please enter a user and message before sending!");
+      window.alert("Please enter a user and message before sending!");
   } else if (user.value === "") {
-      alert("Please enter a user!");
+      window.alert("Please enter a user!");
   } else if (message.value === "") {
-      alert("Please enter a message before sending!");
+      window.alert("Please enter a message before sending!");
   } else {
-      alert(`Messge sent!`);
+      window.alert(`Messge sent!`);
   }
   
 }
