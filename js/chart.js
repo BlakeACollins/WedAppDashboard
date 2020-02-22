@@ -1,11 +1,11 @@
-window.onload= function (){
+
 const notificationDot = document.querySelector('.notificationDot');
 const alertContainer = document.querySelector('.alertContainer');
 const alert = document.querySelector('.alertX');
-const userFields = document.getElementById(".user-fields");
+const userFields = document.getElementById(".sendMessage");
 const message = document.getElementById(".message-fields");
-const userSearch = document.querySelector('.user-search');
-const userMessage = document.querySelector('.user-message');
+const userSearch = document.getElementById('.search-user');
+const userMessage = document.getElementById('.comment');
 const send = document.getElementById(".send");
 
 
@@ -110,19 +110,16 @@ var doughnutChart = new Chart(mobileUsers, {
 });
 
 // Send Message Section
-userFields.addEventListener('submit', (e) => {
-  e.preventDefault();
-  let user = userSearch.value;
-  let message = userMessage.value;
-  if (user == '' && message == '') {
-    window.alert('You haven\'t entered a user or message.');
-  } else if (user == '') {
-    window.alert('You haven\'t entered a user.');
-  } else if (message == '') {
-    window.alert('You haven\'t entered a message.');
+send.addEventListener('click', () => {
+  if (user.value === "" && message.value === "") {
+      alert("Please enter a user and message before sending!");
+  } else if (user.value === "") {
+      alert("Please enter a user!");
+  } else if (message.value === "") {
+      alert("Please enter a  message before sending!");
   } else {
-    window.alert('Your message has been delivered.');
+      alert(`Messge sent!`);
   }
 }
 
-)};
+);
