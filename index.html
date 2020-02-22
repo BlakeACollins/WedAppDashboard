@@ -6,8 +6,8 @@
     <title>Web App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
 
@@ -16,7 +16,7 @@
 
       <!--Header--------------------------------------------------------------------------------->
       <header>
-        <h1>Your App &trade;</h1>
+        <h1>YourApp &trade;</h1>
         <div class="user">
           <img class="headerIcon" src="icons/icon-bell.svg" alt=" alert bell icon">
           <div class="notificationDot"></div>
@@ -53,9 +53,10 @@
               </div>
           </div>
           <div class="alertContainer">
-            <div class="alert">
+            <div class="alert" id="alert">
+              <!--<div class="alert" id="alert"></div>-->
               <p><strong>Alert</strong> - Hey, you have 4 unread alerts!</p>
-              <button class="btn-alert-x">&times;</button>
+              <button class="alertX" id="alertButton">&times;</button>
             </div>
           </div>
         </div>
@@ -258,10 +259,13 @@
         <!-- Message User Section ---------------------------------------------------------------------->
         <div class="message-user widget">
           <h3>Message User</h3>
-            <form class="user-fields">
-              <input class="user-search" name="user-search" type="search" placeholder="Search for User">
-              <textarea class="user-message" name="user_message" placeholder="Message for User"></textarea>
-              <button class="message-user-send" name="message-user-send" type="submit" value="submit">Send</button>
+            <form class="user-fields" id="sendMessage" method="post" name="sendMessage">
+
+              <input class="user-search" id="search-user" name="user-search" type="search" placeholder="Search for User">
+
+              <textarea class="user-message" id="comment" name="user_message" placeholder="Message for User"></textarea>
+              
+              <button class="message-user-send" id="send" name="message-user-send" type="submit" value="submit">Send</button>
             </form>
         </div>
 
