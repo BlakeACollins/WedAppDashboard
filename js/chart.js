@@ -3,10 +3,9 @@ const notificationDot = document.querySelector('.notificationDot');
 const alertContainer = document.querySelector('.alertContainer');
 const alert = document.querySelector('.alertX');
 const userFields = document.getElementById(".sendMessage");
-const message = document.getElementById(".message-fields");
 const userSearch = document.getElementById('.search-user');
 const userMessage = document.getElementById('.comment');
-const send = document.getElementById(".send");
+const send = document.querySelector(".message-user-send");
 
 
   
@@ -116,7 +115,7 @@ send.addEventListener('click', () => {
   } else if (user.value === "") {
       alert("Please enter a user!");
   } else if (message.value === "") {
-      alert("Please enter a  message before sending!");
+      alert("Please enter a message before sending!");
   } else {
       alert(`Messge sent!`);
   }
