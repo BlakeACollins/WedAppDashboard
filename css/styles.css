@@ -194,7 +194,7 @@ main {
   grid-area: dashboard;
   background-color: white;
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .searchBar{
@@ -243,7 +243,7 @@ main {
   padding: 15px;
   text-align: center;
   background-color: #fff;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 
@@ -651,7 +651,7 @@ input:checked + .slider:after {
   }
   
   .appContainer {
-    grid-template-columns: auto minmax(345px, 945px) minmax(345px, 945px);
+    grid-template-columns: 60px 1fr;
     grid-template-areas:
       "header header header"
       "nav main main";
