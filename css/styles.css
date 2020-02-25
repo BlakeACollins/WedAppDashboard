@@ -798,14 +798,14 @@ input:checked + .slider:after {
     padding-left: 10px;
   }
   .socialCard {
-    margin: 0 22px 22px 22px;
-    padding: 1em 8px;
+    margin: 0 15px 15px 15px;
+    padding: .5em 5px;
   }
   .twitterIcon,
   .facebookIcon,
   .googleIcon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .soc-icon {
     width: 35px;
