@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-  
-}
+
 
 /* HEADER STYLING******************************************************************************************/
 
@@ -651,10 +648,10 @@ input:checked + .slider:after {
   }
   
   .appContainer {
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "header header header"
-      "nav main main";
+      "header header"
+      "nav main";
   }
   h3 {
     font-size: 1em;
@@ -695,6 +692,7 @@ input:checked + .slider:after {
     border-left: 3px solid #2ecc71;
   }
   main {
+    width: calc(100%-60px);
     grid-template-areas:
     "dashboard dashboard"
     "traffic traffic"
