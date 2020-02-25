@@ -4,7 +4,7 @@
 
 header {
   grid-area: header;
-  grid-template-columns: 1fr 1.5fr .2fr .5fr;
+  grid-template-columns: 1fr;
   background-color: #1d7eed;
   color: black;
   display: flex;
@@ -174,7 +174,7 @@ main {
   background-color: gray;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "dashboard"
     "traffic"
